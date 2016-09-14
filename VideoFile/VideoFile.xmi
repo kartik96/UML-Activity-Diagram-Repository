@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.1.1 http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_Y2Y8gHpsEea4OJ66Qww-vw" name="VideoFile">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Y2Y8gXpsEea4OJ66Qww-vw">
+    <importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Y2Y8gnpsEea4OJ66Qww-vw" name="VideoFile">
+    <node xmi:type="uml:InitialNode" xmi:id="_Y2Y8g3psEea4OJ66Qww-vw" outgoing="_Y2Y8sHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8hHpsEea4OJ66Qww-vw" name="Select video file to be played" outgoing="_Y2Y8s3psEea4OJ66Qww-vw" incoming="_Y2Y8sHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8hXpsEea4OJ66Qww-vw" name="Double click the file to initiate job" outgoing="_Y2Y8tnpsEea4OJ66Qww-vw" incoming="_Y2Y8s3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_Y2Y8hnpsEea4OJ66Qww-vw" name="Fork1" outgoing="_Y2Y8uXpsEea4OJ66Qww-vw _Y2Y87HpsEea4OJ66Qww-vw" incoming="_Y2Y8tnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8h3psEea4OJ66Qww-vw" name="Job comes to job pool" outgoing="_Y2Y8vHpsEea4OJ66Qww-vw" incoming="_Y2Y8uXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8iHpsEea4OJ66Qww-vw" name="Long term schedular picks the job" outgoing="_Y2Y9KHpsEea4OJ66Qww-vw" incoming="_Y2Y8vHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8iXpsEea4OJ66Qww-vw" name="Job brought into RAM" outgoing="_Y2Y9LnpsEea4OJ66Qww-vw" incoming="_Y2Y9K3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Y2Y8inpsEea4OJ66Qww-vw" name="Is space available in RAM?" outgoing="_Y2Y8v3psEea4OJ66Qww-vw _Y2Y9FnpsEea4OJ66Qww-vw" incoming="_Y2Y9KHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8i3psEea4OJ66Qww-vw" name="Process wait in a queue for space in RAM" outgoing="_Y2Y9EHpsEea4OJ66Qww-vw" incoming="_Y2Y8v3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_Y2Y8jHpsEea4OJ66Qww-vw" name="Merge1" outgoing="_Y2Y9K3psEea4OJ66Qww-vw" incoming="_Y2Y9E3psEea4OJ66Qww-vw _Y2Y9FnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8jXpsEea4OJ66Qww-vw" name="Process picked by Short Term Schedular" outgoing="_Y2Y8wnpsEea4OJ66Qww-vw" incoming="_Y2Y9LnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8jnpsEea4OJ66Qww-vw" name="Selected Process handed-over to processor by dispatcher" outgoing="_Y2Y9HHpsEea4OJ66Qww-vw" incoming="_Y2Y9GXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8j3psEea4OJ66Qww-vw" name="Scheduling is done using Scheduling algorithms" outgoing="_Y2Y9GXpsEea4OJ66Qww-vw" incoming="_Y2Y8wnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_Y2Y8kHpsEea4OJ66Qww-vw" name="Join1" outgoing="_Y2Y8y3psEea4OJ66Qww-vw" incoming="_Y2Y9DXpsEea4OJ66Qww-vw _Y2Y9JXpsEea4OJ66Qww-vw">
+      <joinSpec xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8kXpsEea4OJ66Qww-vw"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8knpsEea4OJ66Qww-vw" name="Video data frames come to decoding stage" outgoing="_Y2Y8xXpsEea4OJ66Qww-vw" incoming="_Y2Y873psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8k3psEea4OJ66Qww-vw" name="Layer by layer(LBL) core activated to intialize Video codec" outgoing="_Y2Y80XpsEea4OJ66Qww-vw" incoming="_Y2Y8xXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8lHpsEea4OJ66Qww-vw" name="Data decoded" outgoing="_Y2Y81HpsEea4OJ66Qww-vw" incoming="_Y2Y9NHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8lXpsEea4OJ66Qww-vw" name="Packets sent to frame buffer" outgoing="_Y2Y8yHpsEea4OJ66Qww-vw" incoming="_Y2Y813psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8lnpsEea4OJ66Qww-vw" name="Open GL/direct3D render the packets" outgoing="_Y2Y82npsEea4OJ66Qww-vw" incoming="_Y2Y8yHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8l3psEea4OJ66Qww-vw" name="RAMDAC translates image to analog signals" outgoing="_Y2Y88npsEea4OJ66Qww-vw" incoming="_Y2Y82npsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8mHpsEea4OJ66Qww-vw" name="Audio Video file successfully played" outgoing="_Y2Y8znpsEea4OJ66Qww-vw" incoming="_Y2Y8y3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Y2Y8mXpsEea4OJ66Qww-vw" incoming="_Y2Y8znpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8mnpsEea4OJ66Qww-vw" name="Video Codec activated to decode data" outgoing="_Y2Y84HpsEea4OJ66Qww-vw" incoming="_Y2Y80XpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8m3psEea4OJ66Qww-vw" name="Data goes to VRAM" outgoing="_Y2Y813psEea4OJ66Qww-vw" incoming="_Y2Y81HpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8nHpsEea4OJ66Qww-vw" name="Sound card retrieves sound data from RAM" outgoing="_Y2Y9B3psEea4OJ66Qww-vw" incoming="_Y2Y9BHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8nXpsEea4OJ66Qww-vw" name="Digital audio signals converted to analog" outgoing="_Y2Y9CnpsEea4OJ66Qww-vw" incoming="_Y2Y9B3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8nnpsEea4OJ66Qww-vw" name="Signals sent to speakers" outgoing="_Y2Y9InpsEea4OJ66Qww-vw" incoming="_Y2Y9CnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8n3psEea4OJ66Qww-vw" name="Processor processes time stamps embedded in video file" outgoing="_Y2Y83XpsEea4OJ66Qww-vw" incoming="_Y2Y9AXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8oHpsEea4OJ66Qww-vw" name="Audio/Video Synchronization done for Lip-Sync." outgoing="_Y2Y85npsEea4OJ66Qww-vw" incoming="_Y2Y83XpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Y2Y8oXpsEea4OJ66Qww-vw" name="Are subtitles present for video?" outgoing="_Y2Y843psEea4OJ66Qww-vw _Y2Y9N3psEea4OJ66Qww-vw" incoming="_Y2Y84HpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8onpsEea4OJ66Qww-vw" name="Load subtitle data" outgoing="_Y2Y9MXpsEea4OJ66Qww-vw" incoming="_Y2Y843psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8o3psEea4OJ66Qww-vw" name="Clock incremented/decremented for Audio" outgoing="_Y2Y86XpsEea4OJ66Qww-vw" incoming="_Y2Y85npsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8pHpsEea4OJ66Qww-vw" name="Frame timer keeps track on delays" outgoing="_Y2Y9H3psEea4OJ66Qww-vw" incoming="_Y2Y86XpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8pXpsEea4OJ66Qww-vw" name="GPU mode on" outgoing="_Y2Y873psEea4OJ66Qww-vw" incoming="_Y2Y87HpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8pnpsEea4OJ66Qww-vw" name="Monitor recieves analog signals" outgoing="_Y2Y9DXpsEea4OJ66Qww-vw" incoming="_Y2Y88npsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8p3psEea4OJ66Qww-vw" name="Audio codec is initialized" outgoing="_Y2Y89XpsEea4OJ66Qww-vw" incoming="_Y2Y9HHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8qHpsEea4OJ66Qww-vw" name="Audio stream is decoded by codec" outgoing="_Y2Y8-HpsEea4OJ66Qww-vw" incoming="_Y2Y89XpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8qXpsEea4OJ66Qww-vw" name="Decoded data sent to RAM" outgoing="_Y2Y8-3psEea4OJ66Qww-vw" incoming="_Y2Y8-HpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8qnpsEea4OJ66Qww-vw" name="I/O controller in sound card activated" outgoing="_Y2Y9BHpsEea4OJ66Qww-vw" incoming="_Y2Y8_npsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_Y2Y8q3psEea4OJ66Qww-vw" name="Fork2" outgoing="_Y2Y8_npsEea4OJ66Qww-vw _Y2Y9AXpsEea4OJ66Qww-vw" incoming="_Y2Y8-3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Y2Y8rHpsEea4OJ66Qww-vw" name="Page replacement algo. for creating free space in RAM" outgoing="_Y2Y9E3psEea4OJ66Qww-vw" incoming="_Y2Y9EHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_Y2Y8rXpsEea4OJ66Qww-vw" name="Join2" outgoing="_Y2Y9JXpsEea4OJ66Qww-vw" incoming="_Y2Y9H3psEea4OJ66Qww-vw _Y2Y9InpsEea4OJ66Qww-vw">
+      <joinSpec xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8rnpsEea4OJ66Qww-vw"/>
+    </node>
+    <node xmi:type="uml:MergeNode" xmi:id="_Y2Y8r3psEea4OJ66Qww-vw" name="Merge2" outgoing="_Y2Y9NHpsEea4OJ66Qww-vw" incoming="_Y2Y9MXpsEea4OJ66Qww-vw _Y2Y9N3psEea4OJ66Qww-vw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8sHpsEea4OJ66Qww-vw" source="_Y2Y8g3psEea4OJ66Qww-vw" target="_Y2Y8hHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8sXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8snpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8s3psEea4OJ66Qww-vw" source="_Y2Y8hHpsEea4OJ66Qww-vw" target="_Y2Y8hXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8tHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8tXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8tnpsEea4OJ66Qww-vw" source="_Y2Y8hXpsEea4OJ66Qww-vw" target="_Y2Y8hnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8t3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8uHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8uXpsEea4OJ66Qww-vw" source="_Y2Y8hnpsEea4OJ66Qww-vw" target="_Y2Y8h3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8unpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8u3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8vHpsEea4OJ66Qww-vw" source="_Y2Y8h3psEea4OJ66Qww-vw" target="_Y2Y8iHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8vXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8vnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8v3psEea4OJ66Qww-vw" name="No" source="_Y2Y8inpsEea4OJ66Qww-vw" target="_Y2Y8i3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8wHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8wXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8wnpsEea4OJ66Qww-vw" source="_Y2Y8jXpsEea4OJ66Qww-vw" target="_Y2Y8j3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8w3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8xHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8xXpsEea4OJ66Qww-vw" source="_Y2Y8knpsEea4OJ66Qww-vw" target="_Y2Y8k3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8xnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8x3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8yHpsEea4OJ66Qww-vw" source="_Y2Y8lXpsEea4OJ66Qww-vw" target="_Y2Y8lnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8yXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8ynpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8y3psEea4OJ66Qww-vw" source="_Y2Y8kHpsEea4OJ66Qww-vw" target="_Y2Y8mHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8zHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8zXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8znpsEea4OJ66Qww-vw" source="_Y2Y8mHpsEea4OJ66Qww-vw" target="_Y2Y8mXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8z3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y80HpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y80XpsEea4OJ66Qww-vw" source="_Y2Y8k3psEea4OJ66Qww-vw" target="_Y2Y8mnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y80npsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y803psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y81HpsEea4OJ66Qww-vw" source="_Y2Y8lHpsEea4OJ66Qww-vw" target="_Y2Y8m3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y81XpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y81npsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y813psEea4OJ66Qww-vw" source="_Y2Y8m3psEea4OJ66Qww-vw" target="_Y2Y8lXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y82HpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y82XpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y82npsEea4OJ66Qww-vw" source="_Y2Y8lnpsEea4OJ66Qww-vw" target="_Y2Y8l3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y823psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y83HpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y83XpsEea4OJ66Qww-vw" source="_Y2Y8n3psEea4OJ66Qww-vw" target="_Y2Y8oHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y83npsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y833psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y84HpsEea4OJ66Qww-vw" source="_Y2Y8mnpsEea4OJ66Qww-vw" target="_Y2Y8oXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y84XpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y84npsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y843psEea4OJ66Qww-vw" source="_Y2Y8oXpsEea4OJ66Qww-vw" target="_Y2Y8onpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y85HpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y85XpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y85npsEea4OJ66Qww-vw" source="_Y2Y8oHpsEea4OJ66Qww-vw" target="_Y2Y8o3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y853psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y86HpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y86XpsEea4OJ66Qww-vw" source="_Y2Y8o3psEea4OJ66Qww-vw" target="_Y2Y8pHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y86npsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y863psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y87HpsEea4OJ66Qww-vw" source="_Y2Y8hnpsEea4OJ66Qww-vw" target="_Y2Y8pXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y87XpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y87npsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y873psEea4OJ66Qww-vw" source="_Y2Y8pXpsEea4OJ66Qww-vw" target="_Y2Y8knpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y88HpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y88XpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y88npsEea4OJ66Qww-vw" source="_Y2Y8l3psEea4OJ66Qww-vw" target="_Y2Y8pnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y883psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y89HpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y89XpsEea4OJ66Qww-vw" source="_Y2Y8p3psEea4OJ66Qww-vw" target="_Y2Y8qHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y89npsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y893psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8-HpsEea4OJ66Qww-vw" source="_Y2Y8qHpsEea4OJ66Qww-vw" target="_Y2Y8qXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8-XpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8-npsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8-3psEea4OJ66Qww-vw" source="_Y2Y8qXpsEea4OJ66Qww-vw" target="_Y2Y8q3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8_HpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y8_XpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y8_npsEea4OJ66Qww-vw" source="_Y2Y8q3psEea4OJ66Qww-vw" target="_Y2Y8qnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y8_3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9AHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9AXpsEea4OJ66Qww-vw" source="_Y2Y8q3psEea4OJ66Qww-vw" target="_Y2Y8n3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9AnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9A3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9BHpsEea4OJ66Qww-vw" source="_Y2Y8qnpsEea4OJ66Qww-vw" target="_Y2Y8nHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9BXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9BnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9B3psEea4OJ66Qww-vw" source="_Y2Y8nHpsEea4OJ66Qww-vw" target="_Y2Y8nXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9CHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9CXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9CnpsEea4OJ66Qww-vw" source="_Y2Y8nXpsEea4OJ66Qww-vw" target="_Y2Y8nnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9C3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9DHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9DXpsEea4OJ66Qww-vw" source="_Y2Y8pnpsEea4OJ66Qww-vw" target="_Y2Y8kHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9DnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9D3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9EHpsEea4OJ66Qww-vw" source="_Y2Y8i3psEea4OJ66Qww-vw" target="_Y2Y8rHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9EXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9EnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9E3psEea4OJ66Qww-vw" source="_Y2Y8rHpsEea4OJ66Qww-vw" target="_Y2Y8jHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9FHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9FXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9FnpsEea4OJ66Qww-vw" name="Yes" source="_Y2Y8inpsEea4OJ66Qww-vw" target="_Y2Y8jHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9F3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9GHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9GXpsEea4OJ66Qww-vw" source="_Y2Y8j3psEea4OJ66Qww-vw" target="_Y2Y8jnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9GnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9G3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9HHpsEea4OJ66Qww-vw" source="_Y2Y8jnpsEea4OJ66Qww-vw" target="_Y2Y8p3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9HXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9HnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9H3psEea4OJ66Qww-vw" source="_Y2Y8pHpsEea4OJ66Qww-vw" target="_Y2Y8rXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9IHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9IXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9InpsEea4OJ66Qww-vw" source="_Y2Y8nnpsEea4OJ66Qww-vw" target="_Y2Y8rXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9I3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9JHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9JXpsEea4OJ66Qww-vw" source="_Y2Y8rXpsEea4OJ66Qww-vw" target="_Y2Y8kHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9JnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9J3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9KHpsEea4OJ66Qww-vw" source="_Y2Y8iHpsEea4OJ66Qww-vw" target="_Y2Y8inpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9KXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9KnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9K3psEea4OJ66Qww-vw" source="_Y2Y8jHpsEea4OJ66Qww-vw" target="_Y2Y8iXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9LHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9LXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9LnpsEea4OJ66Qww-vw" source="_Y2Y8iXpsEea4OJ66Qww-vw" target="_Y2Y8jXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9L3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9MHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9MXpsEea4OJ66Qww-vw" name="Yes" source="_Y2Y8onpsEea4OJ66Qww-vw" target="_Y2Y8r3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9MnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9M3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9NHpsEea4OJ66Qww-vw" source="_Y2Y8r3psEea4OJ66Qww-vw" target="_Y2Y8lHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9NXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9NnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y2Y9N3psEea4OJ66Qww-vw" name="No" source="_Y2Y8oXpsEea4OJ66Qww-vw" target="_Y2Y8r3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_Y2Y9OHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Y2Y9OXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Y2Y9OnpsEea4OJ66Qww-vw">
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y2Y9O3psEea4OJ66Qww-vw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://schema.omg.org/spec/UML/2.1.1/StandardProfileL2.xmi#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+    </xmi:Extension>
+    <appliedProfile xmi:type="uml:Profile" href="http://schema.omg.org/spec/UML/2.1.1/StandardProfileL2.xmi#_0"/>
+  </profileApplication>
+</uml:Model>
