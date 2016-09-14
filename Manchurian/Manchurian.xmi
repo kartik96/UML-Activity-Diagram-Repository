@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.1.1 http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_yUHUEHpsEea4OJ66Qww-vw" name="Manchurian_AD">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_yUHUEXpsEea4OJ66Qww-vw">
+    <importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_yUHUEnpsEea4OJ66Qww-vw" name="Manchurian_AD">
+    <node xmi:type="uml:InitialNode" xmi:id="_yUHUE3psEea4OJ66Qww-vw" outgoing="_yUHUo3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUFHpsEea4OJ66Qww-vw" name="Take a stove with multiple burners" outgoing="_yUHUgnpsEea4OJ66Qww-vw" incoming="_yUHUpnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUFXpsEea4OJ66Qww-vw" name="Preparing munchurian balls" outgoing="_yUHURnpsEea4OJ66Qww-vw" incoming="_yUHUmnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUFnpsEea4OJ66Qww-vw" name="Preparing manchurian sauce" outgoing="_yUHUW3psEea4OJ66Qww-vw" incoming="_yUHUl3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_yUHUF3psEea4OJ66Qww-vw" name="Fork 2" outgoing="_yUHUT3psEea4OJ66Qww-vw _yUHUsnpsEea4OJ66Qww-vw" incoming="_yUHURnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUGHpsEea4OJ66Qww-vw" name="Take pan1" outgoing="_yUHUSXpsEea4OJ66Qww-vw" incoming="_yUHUsnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUGXpsEea4OJ66Qww-vw" name="Pour 100 ml oil in it" outgoing="_yUHUTHpsEea4OJ66Qww-vw" incoming="_yUHUSXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUGnpsEea4OJ66Qww-vw" name="Heat the oil in pan1" outgoing="_yUHUoHpsEea4OJ66Qww-vw" incoming="_yUHUTHpsEea4OJ66Qww-vw _yUHUqXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUG3psEea4OJ66Qww-vw" name="Take bowl1" outgoing="_yUHUUnpsEea4OJ66Qww-vw" incoming="_yUHUT3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUHHpsEea4OJ66Qww-vw" name="Put 300g maida flour" outgoing="_yUHUVXpsEea4OJ66Qww-vw" incoming="_yUHUUnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUHXpsEea4OJ66Qww-vw" name="Put 180g corn flour" outgoing="_yUHUWHpsEea4OJ66Qww-vw" incoming="_yUHUVXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUHnpsEea4OJ66Qww-vw" name="Take pre-washed and chopped carrot, onion etc." outgoing="_yUHUynpsEea4OJ66Qww-vw" incoming="_yUHUx3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUH3psEea4OJ66Qww-vw" name="Add 150ml water" outgoing="_yUHUx3psEea4OJ66Qww-vw" incoming="_yUHUWHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_yUHUIHpsEea4OJ66Qww-vw" name="Join 2" outgoing="_yUHUr3psEea4OJ66Qww-vw" incoming="_yUHUrHpsEea4OJ66Qww-vw _yUHUvnpsEea4OJ66Qww-vw">
+      <joinSpec xmi:type="uml:OpaqueExpression" xmi:id="_yUHUIXpsEea4OJ66Qww-vw"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUInpsEea4OJ66Qww-vw" name="Put dough balls in pan1" outgoing="_yUHU1npsEea4OJ66Qww-vw" incoming="_yUHUr3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUI3psEea4OJ66Qww-vw" name="Mix vegetables and maida" outgoing="_yUHUzXpsEea4OJ66Qww-vw" incoming="_yUHUwXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUJHpsEea4OJ66Qww-vw" name="Remove the balls turning golden" outgoing="_yUHUkXpsEea4OJ66Qww-vw" incoming="_yUHU1npsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_yUHUJXpsEea4OJ66Qww-vw" name="Fork 3" outgoing="_yUHUXnpsEea4OJ66Qww-vw _yUHUZ3psEea4OJ66Qww-vw" incoming="_yUHUW3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUJnpsEea4OJ66Qww-vw" name="Take pan2" outgoing="_yUHUYXpsEea4OJ66Qww-vw" incoming="_yUHUXnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUJ3psEea4OJ66Qww-vw" name="Pour 50ml oil in it" outgoing="_yUHUZHpsEea4OJ66Qww-vw" incoming="_yUHUYXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUKHpsEea4OJ66Qww-vw" name="Heat the oil in pan2" outgoing="_yUHUtXpsEea4OJ66Qww-vw" incoming="_yUHUZHpsEea4OJ66Qww-vw _yUHUu3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUKXpsEea4OJ66Qww-vw" name="Take pre-washed and chopped carrot, onion etc." outgoing="_yUHU2XpsEea4OJ66Qww-vw" incoming="_yUHUZ3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUKnpsEea4OJ66Qww-vw" name="Take pre-washed grinder" outgoing="_yUHUanpsEea4OJ66Qww-vw" incoming="_yUHU2XpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUK3psEea4OJ66Qww-vw" name="Put vegetables in grinder" outgoing="_yUHUbXpsEea4OJ66Qww-vw" incoming="_yUHUanpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHULHpsEea4OJ66Qww-vw" name="Make the paste" outgoing="_yUHU3HpsEea4OJ66Qww-vw" incoming="_yUHUbXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_yUHULXpsEea4OJ66Qww-vw" name="Join 3" outgoing="_yUHU33psEea4OJ66Qww-vw" incoming="_yUHUuHpsEea4OJ66Qww-vw _yUHU3HpsEea4OJ66Qww-vw">
+      <joinSpec xmi:type="uml:OpaqueExpression" xmi:id="_yUHULnpsEea4OJ66Qww-vw"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUL3psEea4OJ66Qww-vw" name="Add spices to it" outgoing="_yUHUcHpsEea4OJ66Qww-vw" incoming="_yUHU4npsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUMHpsEea4OJ66Qww-vw" name="Add vinegar and red chilli sauce" outgoing="_yUHUc3psEea4OJ66Qww-vw" incoming="_yUHUcHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUMXpsEea4OJ66Qww-vw" name="Stir the paste on low heat" outgoing="_yUHUdnpsEea4OJ66Qww-vw" incoming="_yUHUc3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_yUHUMnpsEea4OJ66Qww-vw" name="Want to make sauce thick?" outgoing="_yUHUeXpsEea4OJ66Qww-vw _yUHUfHpsEea4OJ66Qww-vw" incoming="_yUHUdnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUM3psEea4OJ66Qww-vw" name="Add 300 grams corn starch" outgoing="_yUHUf3psEea4OJ66Qww-vw" incoming="_yUHUeXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_yUHUNHpsEea4OJ66Qww-vw" name="Join 1" outgoing="_yUHUhXpsEea4OJ66Qww-vw" incoming="_yUHUfHpsEea4OJ66Qww-vw _yUHUf3psEea4OJ66Qww-vw _yUHUlHpsEea4OJ66Qww-vw">
+      <joinSpec xmi:type="uml:OpaqueExpression" xmi:id="_yUHUNXpsEea4OJ66Qww-vw"/>
+    </node>
+    <node xmi:type="uml:ForkNode" xmi:id="_yUHUNnpsEea4OJ66Qww-vw" name="Fork 1" outgoing="_yUHUl3psEea4OJ66Qww-vw _yUHUmnpsEea4OJ66Qww-vw" incoming="_yUHUgnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUN3psEea4OJ66Qww-vw" name="Take bowl2" outgoing="_yUHUiHpsEea4OJ66Qww-vw" incoming="_yUHUhXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUOHpsEea4OJ66Qww-vw" name="Put fried balls in bowl2" outgoing="_yUHUi3psEea4OJ66Qww-vw" incoming="_yUHUiHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUOXpsEea4OJ66Qww-vw" name="Put manchurian sauce in bowl2" outgoing="_yUHUjnpsEea4OJ66Qww-vw" incoming="_yUHUi3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUOnpsEea4OJ66Qww-vw" name="Garnish the mixture with corriender leaves" outgoing="_yUHUnXpsEea4OJ66Qww-vw" incoming="_yUHUjnpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_yUHUO3psEea4OJ66Qww-vw" incoming="_yUHUnXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUPHpsEea4OJ66Qww-vw" name="Place the balls on paper towel" outgoing="_yUHUlHpsEea4OJ66Qww-vw" incoming="_yUHUkXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_yUHUPXpsEea4OJ66Qww-vw" name="Is oil color changed to brown?" outgoing="_yUHUqXpsEea4OJ66Qww-vw _yUHUrHpsEea4OJ66Qww-vw" incoming="_yUHUoHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUPnpsEea4OJ66Qww-vw" name="Open the recipe for preparing manchurian" outgoing="_yUHUpnpsEea4OJ66Qww-vw" incoming="_yUHUo3psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_yUHUP3psEea4OJ66Qww-vw" name="Is oil color changed to brown?" outgoing="_yUHUuHpsEea4OJ66Qww-vw _yUHUu3psEea4OJ66Qww-vw" incoming="_yUHUtXpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUQHpsEea4OJ66Qww-vw" name="Mix spices" outgoing="_yUHU0HpsEea4OJ66Qww-vw" incoming="_yUHUxHpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHUQXpsEea4OJ66Qww-vw" name="Make dough" outgoing="_yUHUvnpsEea4OJ66Qww-vw" incoming="_yUHU03psEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_yUHUQnpsEea4OJ66Qww-vw" name="Fork4" outgoing="_yUHUwXpsEea4OJ66Qww-vw _yUHUxHpsEea4OJ66Qww-vw" incoming="_yUHUynpsEea4OJ66Qww-vw"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_yUHUQ3psEea4OJ66Qww-vw" name="Join4" outgoing="_yUHU03psEea4OJ66Qww-vw" incoming="_yUHUzXpsEea4OJ66Qww-vw _yUHU0HpsEea4OJ66Qww-vw">
+      <joinSpec xmi:type="uml:OpaqueExpression" xmi:id="_yUHURHpsEea4OJ66Qww-vw"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yUHURXpsEea4OJ66Qww-vw" name="Add paste in pan2" outgoing="_yUHU4npsEea4OJ66Qww-vw" incoming="_yUHU33psEea4OJ66Qww-vw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHURnpsEea4OJ66Qww-vw" source="_yUHUFXpsEea4OJ66Qww-vw" target="_yUHUF3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUR3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUSHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUSXpsEea4OJ66Qww-vw" source="_yUHUGHpsEea4OJ66Qww-vw" target="_yUHUGXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUSnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUS3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUTHpsEea4OJ66Qww-vw" source="_yUHUGXpsEea4OJ66Qww-vw" target="_yUHUGnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUTXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUTnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUT3psEea4OJ66Qww-vw" source="_yUHUF3psEea4OJ66Qww-vw" target="_yUHUG3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUUHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUUXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUUnpsEea4OJ66Qww-vw" source="_yUHUG3psEea4OJ66Qww-vw" target="_yUHUHHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUU3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUVHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUVXpsEea4OJ66Qww-vw" source="_yUHUHHpsEea4OJ66Qww-vw" target="_yUHUHXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUVnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUV3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUWHpsEea4OJ66Qww-vw" source="_yUHUHXpsEea4OJ66Qww-vw" target="_yUHUH3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUWXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUWnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUW3psEea4OJ66Qww-vw" source="_yUHUFnpsEea4OJ66Qww-vw" target="_yUHUJXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUXHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUXXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUXnpsEea4OJ66Qww-vw" source="_yUHUJXpsEea4OJ66Qww-vw" target="_yUHUJnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUX3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUYHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUYXpsEea4OJ66Qww-vw" source="_yUHUJnpsEea4OJ66Qww-vw" target="_yUHUJ3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUYnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUY3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUZHpsEea4OJ66Qww-vw" source="_yUHUJ3psEea4OJ66Qww-vw" target="_yUHUKHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUZXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUZnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUZ3psEea4OJ66Qww-vw" source="_yUHUJXpsEea4OJ66Qww-vw" target="_yUHUKXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUaHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUaXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUanpsEea4OJ66Qww-vw" source="_yUHUKnpsEea4OJ66Qww-vw" target="_yUHUK3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUa3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUbHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUbXpsEea4OJ66Qww-vw" source="_yUHUK3psEea4OJ66Qww-vw" target="_yUHULHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUbnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUb3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUcHpsEea4OJ66Qww-vw" source="_yUHUL3psEea4OJ66Qww-vw" target="_yUHUMHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUcXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUcnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUc3psEea4OJ66Qww-vw" source="_yUHUMHpsEea4OJ66Qww-vw" target="_yUHUMXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUdHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUdXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUdnpsEea4OJ66Qww-vw" source="_yUHUMXpsEea4OJ66Qww-vw" target="_yUHUMnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUd3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUeHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUeXpsEea4OJ66Qww-vw" name="Yes" source="_yUHUMnpsEea4OJ66Qww-vw" target="_yUHUM3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUenpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUe3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUfHpsEea4OJ66Qww-vw" name="No" source="_yUHUMnpsEea4OJ66Qww-vw" target="_yUHUNHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUfXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUfnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUf3psEea4OJ66Qww-vw" source="_yUHUM3psEea4OJ66Qww-vw" target="_yUHUNHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUgHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUgXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUgnpsEea4OJ66Qww-vw" source="_yUHUFHpsEea4OJ66Qww-vw" target="_yUHUNnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUg3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUhHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUhXpsEea4OJ66Qww-vw" source="_yUHUNHpsEea4OJ66Qww-vw" target="_yUHUN3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUhnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUh3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUiHpsEea4OJ66Qww-vw" source="_yUHUN3psEea4OJ66Qww-vw" target="_yUHUOHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUiXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUinpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUi3psEea4OJ66Qww-vw" source="_yUHUOHpsEea4OJ66Qww-vw" target="_yUHUOXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUjHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUjXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUjnpsEea4OJ66Qww-vw" source="_yUHUOXpsEea4OJ66Qww-vw" target="_yUHUOnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUj3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUkHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUkXpsEea4OJ66Qww-vw" source="_yUHUJHpsEea4OJ66Qww-vw" target="_yUHUPHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUknpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUk3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUlHpsEea4OJ66Qww-vw" source="_yUHUPHpsEea4OJ66Qww-vw" target="_yUHUNHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUlXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUlnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUl3psEea4OJ66Qww-vw" source="_yUHUNnpsEea4OJ66Qww-vw" target="_yUHUFnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUmHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUmXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUmnpsEea4OJ66Qww-vw" source="_yUHUNnpsEea4OJ66Qww-vw" target="_yUHUFXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUm3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUnHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUnXpsEea4OJ66Qww-vw" source="_yUHUOnpsEea4OJ66Qww-vw" target="_yUHUO3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUnnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUn3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUoHpsEea4OJ66Qww-vw" source="_yUHUGnpsEea4OJ66Qww-vw" target="_yUHUPXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUoXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUonpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUo3psEea4OJ66Qww-vw" source="_yUHUE3psEea4OJ66Qww-vw" target="_yUHUPnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUpHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUpXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUpnpsEea4OJ66Qww-vw" source="_yUHUPnpsEea4OJ66Qww-vw" target="_yUHUFHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUp3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUqHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUqXpsEea4OJ66Qww-vw" name="No" source="_yUHUPXpsEea4OJ66Qww-vw" target="_yUHUGnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUqnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUq3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUrHpsEea4OJ66Qww-vw" name="Yes" source="_yUHUPXpsEea4OJ66Qww-vw" target="_yUHUIHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUrXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUrnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUr3psEea4OJ66Qww-vw" source="_yUHUIHpsEea4OJ66Qww-vw" target="_yUHUInpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUsHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUsXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUsnpsEea4OJ66Qww-vw" source="_yUHUF3psEea4OJ66Qww-vw" target="_yUHUGHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUs3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUtHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUtXpsEea4OJ66Qww-vw" source="_yUHUKHpsEea4OJ66Qww-vw" target="_yUHUP3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUtnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUt3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUuHpsEea4OJ66Qww-vw" name="Yes" source="_yUHUP3psEea4OJ66Qww-vw" target="_yUHULXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUuXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUunpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUu3psEea4OJ66Qww-vw" name="No" source="_yUHUP3psEea4OJ66Qww-vw" target="_yUHUKHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUvHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUvXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUvnpsEea4OJ66Qww-vw" source="_yUHUQXpsEea4OJ66Qww-vw" target="_yUHUIHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUv3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUwHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUwXpsEea4OJ66Qww-vw" source="_yUHUQnpsEea4OJ66Qww-vw" target="_yUHUI3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUwnpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUw3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUxHpsEea4OJ66Qww-vw" source="_yUHUQnpsEea4OJ66Qww-vw" target="_yUHUQHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUxXpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUxnpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUx3psEea4OJ66Qww-vw" source="_yUHUH3psEea4OJ66Qww-vw" target="_yUHUHnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUyHpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUyXpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUynpsEea4OJ66Qww-vw" source="_yUHUHnpsEea4OJ66Qww-vw" target="_yUHUQnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUy3psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUzHpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHUzXpsEea4OJ66Qww-vw" source="_yUHUI3psEea4OJ66Qww-vw" target="_yUHUQ3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHUznpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHUz3psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU0HpsEea4OJ66Qww-vw" source="_yUHUQHpsEea4OJ66Qww-vw" target="_yUHUQ3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU0XpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU0npsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU03psEea4OJ66Qww-vw" source="_yUHUQ3psEea4OJ66Qww-vw" target="_yUHUQXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU1HpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU1XpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU1npsEea4OJ66Qww-vw" source="_yUHUInpsEea4OJ66Qww-vw" target="_yUHUJHpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU13psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU2HpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU2XpsEea4OJ66Qww-vw" source="_yUHUKXpsEea4OJ66Qww-vw" target="_yUHUKnpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU2npsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU23psEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU3HpsEea4OJ66Qww-vw" source="_yUHULHpsEea4OJ66Qww-vw" target="_yUHULXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU3XpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU3npsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU33psEea4OJ66Qww-vw" source="_yUHULXpsEea4OJ66Qww-vw" target="_yUHURXpsEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU4HpsEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU4XpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yUHU4npsEea4OJ66Qww-vw" source="_yUHURXpsEea4OJ66Qww-vw" target="_yUHUL3psEea4OJ66Qww-vw">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_yUHU43psEea4OJ66Qww-vw">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_yUHU5HpsEea4OJ66Qww-vw" value="1"/>
+    </edge>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yUHU5XpsEea4OJ66Qww-vw">
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yUHU5npsEea4OJ66Qww-vw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://schema.omg.org/spec/UML/2.1.1/StandardProfileL2.xmi#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+    </xmi:Extension>
+    <appliedProfile xmi:type="uml:Profile" href="http://schema.omg.org/spec/UML/2.1.1/StandardProfileL2.xmi#_0"/>
+  </profileApplication>
+</uml:Model>
